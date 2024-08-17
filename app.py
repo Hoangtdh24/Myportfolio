@@ -36,6 +36,14 @@ def txt4(a, b, c): # 3 columns
   with col3:
     st.markdown(c)
 
+def myprj_thumbnail(title,domains,description,tools,skills):
+    ctn = st.container(border=True)
+    ctn.write(f'#### {title}')
+    ctn.markdown('Domain:'+f' :blue-background[{i}]' for i in domains)
+    ctn.markdown(f'*{description}*')
+    ctn.markdown('Tools:'+f' :orange-background[{i}]' for i in tools)
+    ctn.image(image,width =150)
+
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
 
 with open("style.css") as f:
@@ -106,4 +114,6 @@ with tab2:
         con34.markdown('''*Tổng hợp dữ liệu nghĩa vụ của khách hàng, tự động gửi mail thông báo định kỳ:  
         + Nghĩa vụ tài chính: thanh toán gốc/lãi vay, thanh toán BCT theo LC, lãi/phí LC UPAS, phí bảo lãnh, phí định giá lại, phí tái tục bảo hiểm tài sản...  
         + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ*''')
+
+        myprj_thumbnail('abv',['d','e','f'],'abc.  def.  gh',['a','b'],['a'])
 
