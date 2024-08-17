@@ -41,7 +41,7 @@ st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", l
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 image = Image.open('./image/my_portrait.jpg')
-header_img, header_info = st.columns((2,1,2))
+header_img, header_info = st.columns((3,7))
 header_img.image(image, use_column_width  = True)
 with header_info:
     st.write('''
