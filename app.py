@@ -48,5 +48,5 @@ with header_info:
     # TRẦN DUY HOÀNG
     ##### Business Intelligence - Data Analyst
     ''')
-st.header('Lịch sử')
+st.write('Quá trình')
 txt1('2022-now','Chuyên gia Quản trị hiệu quả vận hành')
