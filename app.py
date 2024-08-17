@@ -42,14 +42,15 @@ with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 image = Image.open('./image/my_portrait.jpg')
 _,header_img,_ = st.columns((1,2,1))
-header_img.image(image, width = 50)
+header_img.image(image, width = 200)
 
 st.write('''
     # TRẦN DUY HOÀNG
     ##### Business Intelligence - Data Analyst
     ''')
-st.header('Quá trình',divider ='gray')
-txt2('April 2024 - now','Chuyên gia Quản trị hiệu quả vận hành')
-txt2('','#Ngân hàng TMCP Kỹ thương Việt Nam')
-txt2('May 2022 - Mar 2024','Chuyên viên cao cấp Quản trị hiệu quả vận hành')
-txt2('Jul 2020 - Apr 2022','Chuyên viên Thanh toán & Tài trợ thương mại')
+tab1, tab2, tab3 = st.tabs(["Work Experience", "Skills", "Education & Certificate","Project","References"])
+with tab1:
+    txt2('April 2024 - now','Chuyên gia Quản trị hiệu quả vận hành')
+    txt2('','#Ngân hàng TMCP Kỹ thương Việt Nam')
+    txt2('May 2022 - Mar 2024','Chuyên viên cao cấp Quản trị hiệu quả vận hành')
+    txt2('Jul 2020 - Apr 2022','Chuyên viên Thanh toán & Tài trợ thương mại')
