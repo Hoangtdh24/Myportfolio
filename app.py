@@ -63,18 +63,21 @@ with tab1:
 with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
-        st.write('## Phân tích chất lượng dịch vụ vận hành')
+        st.write('## Phân tích & cải tiến chất lượng')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
-        con1 = st.container(border=True)
-        con1.write('### SLA/FTR/TAT/ProcessingTime Index Monitoring')
-        con1.button('Xem thêm')
+        con11 = st.container(border=True)
+        con11.write('### Dịch vụ vận hành')
+
+        con12 = st.container(border=True)
+        con12.write('### Tuân thủ & văn hóa trải nghiệm')
+        
     with col2:
         st.write('## Giám sát rủi ro hoạt động')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
         con2 = st.container(border=True)
-        con2.write('#Giám sát rủi ro hoạt động')
-        con2.write('Domain: Trade Finance, Loans')
+        con2.write('### Sản phẩm LC')
     with col3:
-        st.write('## Khai thác dữ liệu & Tự động hóa quy trình')
-        con3 = st.container(border = True)
-        con3.write('#ABC')
+        st.write('## Tự động hóa quy trình')
+        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[Collections] :blue-background[Credit Cards Telesales]")
+        con31 = st.container(border = True)
+        con31.write('### Tác nghiệp thu nợ tại hiện trường')
