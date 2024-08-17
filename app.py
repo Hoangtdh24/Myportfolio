@@ -48,7 +48,7 @@ st.write('''
     # TRẦN DUY HOÀNG
     ##### Business Intelligence - Data Analyst
     ''')
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Work Experience", "        Skills        ", "Education & Certificate","     Project     ","    References    "])
+tab1, tab2, tab3, tab4, tab5 = st.tabs([" Work Experience ", "        Skills", " Education & Certificate ","     Project","    References"])
 with tab1:
     txt2('April 2024 - now','Chuyên gia Quản trị hiệu quả vận hành')
     txt2('','#Ngân hàng TMCP Kỹ thương Việt Nam')
