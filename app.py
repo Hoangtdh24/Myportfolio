@@ -48,9 +48,26 @@ st.write('''
     # TRẦN DUY HOÀNG
     ##### Business Intelligence - Data Analyst
     ''')
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["        Work Experience ", "        Skills", "        Education & Certificate ","     Project","        References"])
+tab1, tab2, tab3 = st.tabs(["    About me", "    My Projects", "    References"])
 with tab1:
     txt2('April 2024 - now','Chuyên gia Quản trị hiệu quả vận hành')
     txt2('','#Ngân hàng TMCP Kỹ thương Việt Nam')
     txt2('May 2022 - Mar 2024','Chuyên viên cao cấp Quản trị hiệu quả vận hành')
     txt2('Jul 2020 - Apr 2022','Chuyên viên Thanh toán & Tài trợ thương mại')
+
+with tab2:
+    col1,col2,col3,_ = st.columns([3,3,3,1])
+    with col1:
+        st.write('#Phân tích quản trị')
+        con1 = st.container(border=True)
+        con1.write('#Chỉ số chất lượng dịch vụ vận hành')
+        con1.write('Domain: Trade Finance, Loans')
+    with col2:
+        st.write('#Quản trị rủi ro')
+        con2 = st.container(border=True)
+        con2.write('#Giám sát rủi ro hoạt động')
+        con2.write('Domain: Trade Finance, Loans')
+    with col3:
+        st.write('#Tự động hóa quy trình')
+        con3 = st.container(border = True)
+        con3.write('#ABC')
