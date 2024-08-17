@@ -64,20 +64,25 @@ with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
         st.write('## Phân tích & cải tiến chất lượng')
-        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
+        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[HR]")
         con11 = st.container(border=True)
-        con11.write('### Dịch vụ vận hành')
+        con11.write('#### Dịch vụ vận hành')
+        con11.markdown('''**Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.
+        Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng
+        Kể câu chuyện về trải nghiệm của từng nhóm khách hàng thông qua mô hình RFM, về hành trình khách hàng**''')
 
         con12 = st.container(border=True)
-        con12.write('### Tuân thủ & văn hóa trải nghiệm')
+        con12.write('#### Tuân thủ chính sách nhân sự & văn hóa trải nghiệm')
+        con12.markdown('''**Phân tích hành vi tuân thủ giờ làm việc của CBNV toàn hàng, phát hiện hành vi không tốt của một bộ phận CBNV
+        Báo cáo kết quả tham gia hoạt động văn hóa tổ chức**''')
         
     with col2:
         st.write('## Giám sát rủi ro hoạt động')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
         con2 = st.container(border=True)
-        con2.write('### Sản phẩm LC')
+        con2.write('#### Sản phẩm LC')
     with col3:
         st.write('## Tự động hóa quy trình')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[Collections] :blue-background[Credit Cards Telesales]")
         con31 = st.container(border = True)
-        con31.write('### Tác nghiệp thu nợ tại hiện trường')
+        con31.write('#### Tác nghiệp thu nợ tại hiện trường')
