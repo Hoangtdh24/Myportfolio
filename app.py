@@ -70,7 +70,7 @@ with tab2:
         con11.markdown('''*Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.  
         Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng.  
         Kể câu chuyện về trải nghiệm khách hàng về chất lượng dịch vụ thông qua mô hình RFM, qua quan sát hành trình khách hàng.*''')
-        con11.markdown("Tools: :yellow-background[Oracle DWH] :yellow-background[DataBricks] :yellow-background[OBIEE] :yellow-background[PowerBI] :yellow-background[Excel]")
+        con11.markdown("Tools: :orange-background[Oracle DWH] :orange-background[DataBricks] :orange-background[OBIEE] :orange-background[PowerBI] :orange-background[Excel]")
         con11.image(image,width =150)
 
         con12 = st.container(border=True)
