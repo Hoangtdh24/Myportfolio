@@ -40,11 +40,13 @@ st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", l
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-image = Image.open('./image/your_image.png')
+image = Image.open('./image/my_portrait.jpg')
 _, img_column, _ = st.columns((2,1,2))
 img_column.image(image, use_column_width  = True)
 
 st.write('''
-# YOUR NAME
-##### A Developer from Vietnam 🇻🇳  
+# TRẦN DUY HOÀNG
+##### Business Intelligence - Data Analyst
 ''')
+
+txt1('2022-now','Chuyên gia Quản trị hiệu quả vận hành')
