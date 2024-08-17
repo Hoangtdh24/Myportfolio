@@ -67,14 +67,15 @@ with tab2:
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[HR]")
         con11 = st.container(border=True)
         con11.write('#### Dịch vụ vận hành')
-        con11.markdown('''**Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.
-        Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng
-        Kể câu chuyện về trải nghiệm của từng nhóm khách hàng thông qua mô hình RFM, về hành trình khách hàng**''')
+        con11.markdown('''*Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.  
+        Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng. 
+        Kể câu chuyện về trải nghiệm của từng nhóm khách hàng thông qua mô hình RFM, về hành trình khách hàng.*''')
+        con11.image(image,width =150)
 
         con12 = st.container(border=True)
         con12.write('#### Tuân thủ chính sách nhân sự & văn hóa trải nghiệm')
-        con12.markdown('''**Phân tích hành vi tuân thủ giờ làm việc của CBNV toàn hàng, phát hiện hành vi không tốt của một bộ phận CBNV
-        Báo cáo kết quả tham gia hoạt động văn hóa tổ chức**''')
+        con12.markdown('''*Phân tích hành vi tuân thủ giờ làm việc của CBNV toàn hàng, phát hiện hành vi không tốt của một bộ phận CBNV.  
+        Báo cáo kết quả tham gia hoạt động văn hóa tổ chức.*''')
         
     with col2:
         st.write('## Giám sát rủi ro hoạt động')
