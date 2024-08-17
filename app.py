@@ -64,12 +64,13 @@ with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
         st.write('## Phân tích & cải tiến')
-        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[HR]")
         con11 = st.container(border=True)
         con11.write('#### Dịch vụ vận hành')
+        con11.markdown("Domain: :blue-background[International Payment] :blue-background[Trade Finance]")
         con11.markdown('''*Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.  
         Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng.  
         Kể câu chuyện về trải nghiệm khách hàng về chất lượng dịch vụ thông qua mô hình RFM, qua quan sát hành trình khách hàng.*''')
+        con11.markdown("Tools: :yellow-background[Oracle DWH] :yellow-background[DataBricks] :yellow-background[OBIEE] :yellow-background[PowerBI] :yellow-background[Excel]")
         con11.image(image,width =150)
 
         con12 = st.container(border=True)
@@ -78,7 +79,7 @@ with tab2:
         Báo cáo kết quả tham gia hoạt động văn hóa tổ chức.*''')
 
         con13 = st.container(border = True)
-        con13.write('#### Báo cáo follow kích hoạt và chi tiêu thẻ tín dụng: trạng thái kích hoạt - chi tiêu và lịch sử tương tác')
+        con13.write('#### Follow kích hoạt và chi tiêu thẻ tín dụng')
     
     with col2:
         st.write('## Giám sát rủi ro hoạt động')
@@ -98,12 +99,11 @@ with tab2:
 
         con33 = st.container(border = True)
         con33.write('#### Đối chiếu số dư trên tài khoản trung gian')
-        con33.markdown('''*Công cụ xử lý dữ liệu trả ra kết quả đối chiếu giao dịch*''')
+        con33.markdown('''*Công cụ xử lý hàng triệu dòng dữ liệu để đối chiếu giao dịch.*''')
 
         con34 =st.container(border = True)
         con34.write('#### Gửi thông báo nghĩa vụ tài chính/phi tài chính cho khách hàng')
         con34.markdown('''*Tổng hợp dữ liệu nghĩa vụ của khách hàng, tự động gửi mail thông báo định kỳ:  
         + Nghĩa vụ tài chính: thanh toán gốc/lãi vay, thanh toán BCT theo LC, lãi/phí LC UPAS, phí bảo lãnh, phí định giá lại, phí tái tục bảo hiểm tài sản...  
-        + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ
-        *''')
+        + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ*''')
 
