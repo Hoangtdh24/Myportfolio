@@ -63,20 +63,23 @@ with tab1:
 with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
-        st.write('## Phân tích & cải tiến chất lượng')
+        st.write('## Phân tích & cải tiến')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[HR]")
         con11 = st.container(border=True)
         con11.write('#### Dịch vụ vận hành')
         con11.markdown('''*Hoạt động vận hành tại các đơn vị hội sở và chi nhánh được kiểm soát thường xuyên thông qua phân tích dữ liệu xử lý giao dịch.  
-        Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng. 
-        Kể câu chuyện về trải nghiệm của từng nhóm khách hàng thông qua mô hình RFM, về hành trình khách hàng.*''')
+        Phân tích chuyên sâu các chỉ số rời rạc (FTR/SLA/TAT) nhằm cải thiện trải nghiệm khách hàng.  
+        Kể câu chuyện về trải nghiệm khách hàng về chất lượng dịch vụ thông qua mô hình RFM, qua quan sát hành trình khách hàng.*''')
         con11.image(image,width =150)
 
         con12 = st.container(border=True)
         con12.write('#### Tuân thủ chính sách nhân sự & văn hóa trải nghiệm')
         con12.markdown('''*Phân tích hành vi tuân thủ giờ làm việc của CBNV toàn hàng, phát hiện hành vi không tốt của một bộ phận CBNV.  
         Báo cáo kết quả tham gia hoạt động văn hóa tổ chức.*''')
-        
+
+        con13 = st.container(border = True)
+        con13.write('#### Báo cáo follow kích hoạt và chi tiêu thẻ tín dụng: trạng thái kích hoạt - chi tiêu và lịch sử tương tác')
+    
     with col2:
         st.write('## Giám sát rủi ro hoạt động')
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
@@ -87,3 +90,20 @@ with tab2:
         st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans] :blue-background[Collections] :blue-background[Credit Cards Telesales]")
         con31 = st.container(border = True)
         con31.write('#### Tác nghiệp thu nợ tại hiện trường')
+        con31.markdown('''*Cán bộ thu nợ tại hiện trường ghi nhận vị trí tác nghiệp, kết quả tác nghiệp hoặc điều chỉnh kế hoạch tác nghiệp một cách nhanh chóng và di động.  Giám đốc thu hồi nợ có thể giám sát kết quả trực tiếp và thường xuyên.
+        *''')
+        con32 = st.container(border = True)
+        con32.write('#### Tác nghiệp chuyển tiền quốc tế ghi nhận kết quả xử lý ngoại lệ cho khách hàng')
+        con32.markdown('''*CV/CVCC trong quá trình tác nghiệp được trao quyền xử lý ngoại lệ, cần gọi điện cho KH và lưu thông tin cuộc gọi*''')
+
+        con33 = st.container(border = True)
+        con33.write('#### Đối chiếu số dư trên tài khoản trung gian')
+        con33.markdown('''*Công cụ xử lý dữ liệu trả ra kết quả đối chiếu giao dịch*''')
+
+        con34 =st.container(border = True)
+        con34.write('#### Gửi thông báo nghĩa vụ tài chính/phi tài chính cho khách hàng')
+        con34.markdown('''*Tổng hợp dữ liệu nghĩa vụ của khách hàng, tự động gửi mail thông báo định kỳ:  
+        + Nghĩa vụ tài chính: thanh toán gốc/lãi vay, thanh toán BCT theo LC, lãi/phí LC UPAS, phí bảo lãnh, phí định giá lại, phí tái tục bảo hiểm tài sản...  
+        + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ
+        *''')
+
