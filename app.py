@@ -64,12 +64,13 @@ with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
         st.write('# Phân tích chất lượng dịch vụ vận hành')
-        st.markdown('Domain: :blue-background[Trade Finance] :blue-background[Loans])
+        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
         con1 = st.container(border=True)
         con1.write('# SLA/FTR/TAT/ProcessingTime Index Monitoring')
         con1.write('')
     with col2:
         st.write('# Giám sát rủi ro hoạt động')
+        st.markdown("Domain: :blue-background[Trade Finance] :blue-background[Loans]")
         con2 = st.container(border=True)
         con2.write('#Giám sát rủi ro hoạt động')
         con2.write('Domain: Trade Finance, Loans')
