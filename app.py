@@ -41,10 +41,15 @@ st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", l
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 image = Image.open('./image/my_portrait.jpg')
-_,header_img,_ = st.columns((1,2,1))
+header_img,header_title,_ = st.columns((1,2,1))
 header_img.image(image, width = 200)
+header_title.write('''
 
-st.write('''
+
+
+
+
+    
     # TRẦN DUY HOÀNG
     ##### Business Intelligence - Data Analyst
     ''')
@@ -58,16 +63,17 @@ with tab1:
 with tab2:
     col1,col2,col3,_ = st.columns([3,3,3,1])
     with col1:
-        st.write('#Phân tích quản trị')
+        st.write('# Phân tích chất lượng dịch vụ vận hành')
+        st.markdown('Domain: :blue-background[Trade Finance] :blue-background[Loans])
         con1 = st.container(border=True)
-        con1.write('#Chỉ số chất lượng dịch vụ vận hành')
-        con1.write('Domain: Trade Finance, Loans')
+        con1.write('# SLA/FTR/TAT/ProcessingTime Index Monitoring')
+        con1.write('')
     with col2:
-        st.write('#Quản trị rủi ro')
+        st.write('# Giám sát rủi ro hoạt động')
         con2 = st.container(border=True)
         con2.write('#Giám sát rủi ro hoạt động')
         con2.write('Domain: Trade Finance, Loans')
     with col3:
-        st.write('#Tự động hóa quy trình')
+        st.write('# Khai thác dữ liệu & Tự động hóa quy trình')
         con3 = st.container(border = True)
         con3.write('#ABC')
