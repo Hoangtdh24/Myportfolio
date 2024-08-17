@@ -36,7 +36,7 @@ def txt4(a, b, c): # 3 columns
   with col3:
     st.markdown(c)
 
-st.set_page_config(page_title='Le Nguyen Gia Bao - Portfolio',page_icon="☀", layout="wide")
+st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
