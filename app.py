@@ -115,5 +115,6 @@ with tab2:
         + Nghĩa vụ tài chính: thanh toán gốc/lãi vay, thanh toán BCT theo LC, lãi/phí LC UPAS, phí bảo lãnh, phí định giá lại, phí tái tục bảo hiểm tài sản...  
         + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ*''')
 
-        myprj_thumbnail('abv',['d','e','f'],'*abc.  def.  gh.*',['a','b'],['a'])
+        myprj_thumbnail('abv',['d','e','f'],'*sao lại.  không.  xuống dòng.*',['a','b'],['a'])
+        myprj_thumbnail('abc',['d','e','f'],'*sao lại.  không.  xuống dòng.*',['a','b'],['a'])
 
