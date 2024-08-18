@@ -44,7 +44,7 @@ def myprj_thumbnail(title,domains,description,tools,skills,imagename):
     ctn.markdown('Tools: '+' '.join([f':orange-background[{i}]' for i in tools]))
     ctn.markdown('Skills: '+' '.join([f':green-background[{i}]' for i in skills]))
     ctn_image = Image.open(f'./image/{imagename}')
-    ctn.image(ctn_image,use_col_width =True)
+    use_column_width =True)
 
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
 
