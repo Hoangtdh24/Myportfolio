@@ -39,9 +39,9 @@ def txt4(a, b, c): # 3 columns
 def myprj_thumbnail(title,domains,description,tools,skills):
     ctn = st.container(border=True)
     ctn.write(f'#### {title}')
-    ctn.markdown('Domain:'+f' :blue-background[{i}]' for i in domains)
+    ctn.markdown('Domain:'+' '.join([':blue-background['+i+']' for i in domains]))
     ctn.markdown(f'*{description}*')
-    ctn.markdown('Tools:'+f' :orange-background[{i}]' for i in tools)
+    ctn.markdown('Tools:'+' '.join([f':orange-background[{i}]' for i in tools]))
     ctn.image(image,width =150)
 
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
