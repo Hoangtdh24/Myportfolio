@@ -36,13 +36,15 @@ def txt4(a, b, c): # 3 columns
   with col3:
     st.markdown(c)
 
-def myprj_thumbnail(title,domains,description,tools,skills):
+def myprj_thumbnail(title,domains,description,tools,skills,imagename):
     ctn = st.container(border=True)
     ctn.write(f'#### {title}')
     ctn.markdown('Domain: '+' '.join([f':blue-background[{i}]' for i in domains]))
     ctn.markdown(description)
     ctn.markdown('Tools: '+' '.join([f':orange-background[{i}]' for i in tools]))
-    ctn.image(image,width =150)
+    ctn.markdown('Skills: '+' '.join([f':green-background[{i}]' for i in skills]))
+    ctn_image = Image.open(f'./image/{imagename}')
+    ctn.image(ctn_image,use_col_width =True)
 
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
 
@@ -115,10 +117,9 @@ with tab2:
         + Nghĩa vụ tài chính: thanh toán gốc/lãi vay, thanh toán BCT theo LC, lãi/phí LC UPAS, phí bảo lãnh, phí định giá lại, phí tái tục bảo hiểm tài sản...  
         + Nghĩa vụ phi tài chính: nghĩa vụ bổ sung nợ chứng từ*''')
 
-        myprj_thumbnail('abv',['d','e','f'],'''*sao lại.  
-        không.  
-        xuống dòng.*''',['a','b'],['a'])
-        myprj_thumbnail('abc',['d','e','f'],'''*sao lại.  
-        không.  
-        xuống dòng.*''',['a','b'],['a'])
+        myprj_thumbnail('Gửi thông báo nghĩa vụ tới chi nhánh phục vụ khách hàng',['Trade Finance'],'''*Vào ngày phát sinh nghĩa vụ của khách hàng, thông báo cho chi nhánh thực hiện chuẩn bị nguồn ngoại tệ, giá, phí với khách hàng.  
+        Căn cứ để đơn vị hội sở điều động nguồn vốn.*''',['Oracle DWH','Python'],[''],'my_portrait.jpg')
+        myprj_thumbnail('Check in tự động tại sự kiện',['HR'],'''*CBNV sử dụng mã QR được cấp để check in tại sự kiện nội bộ quy mô 1xxx người.  
+        Ban tổ chức nắm được toàn bộ tình hình tham gia của các đơn vị.  
+        Tận dụng nguồn lực nội bộ thay vì thuê ngoài mà vẫn giữ được trải nghiệm tích cực cho CBNV*''',['Python','PowerApps'],['Hành trình khách hàng'],'my_portrait.jpg')
 
