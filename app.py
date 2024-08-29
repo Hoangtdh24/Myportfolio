@@ -9,9 +9,10 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 c
     st.markdown(v_hinhthuc)
   with col2:
     st.markdown(f'**{v_nganh}**') 
-    st.markdown(f'***{v_truong}***')
+    st.markdown(f'*{v_truong}*')
   with col3:
-    st.markdown(v_kynang)
+    for item in v_kynang:
+      st.markdown(item)
   with col4:
     st.markdown(f':blue-background[{v_ketqua}]')
   with col5:
@@ -36,12 +37,12 @@ with inf_address:
 st.header('MỤC TIÊU NGHỀ NGHIỆP',divider ='gray')
 st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.header('HỌC VẤN & CHỨNG CHỈ',divider ='gray')
-w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020","Nghiệp vụ")
+w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020",["Hoạt động kinh doanh","Nghiệp vụ ngoại thương"])
 w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016","")
-w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021","Phân tích định lượng")
-w_hocvan("Chứng chỉ","HackerRank","SLQ Skill (Advanced)","","2022","SQL")
-w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022","PowerBI")
-w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024","Databricks")
+w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021",["Quantity analytics","Python"])
+w_hocvan("Chứng chỉ","HackerRank","SLQ Skill (Advanced)","","2022",["SQL"])
+w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022",["PowerBI","Data Story Telling"])
+w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024",["Databricks"])
 
 
 
