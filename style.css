@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambria:wght@100&display=swap'); 
 
 html, body, [class*="css"] {
-    font-family: 'Cambria', sans-serif; 
+    font-family: 'Cambria', serif; 
     font-size: 18px;
     font-weight: 500;
     color: #091747;
