@@ -58,11 +58,12 @@ st.header('MỤC TIÊU NGHỀ NGHIỆP',divider ='gray')
 st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.header('HỌC VẤN & CHỨNG CHỈ',divider ='gray')
 w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020",["Hoạt động kinh doanh","Nghiệp vụ ngoại thương"])
-w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016","")
+w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016",[])
 w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021",["Quantity analytics","R","Python"])
 w_hocvan("Chứng chỉ","HackerRank","SLQ Skill (Advanced)","","2022",["PLSQL","SQLLite","MySQL"])
 w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022",["PowerBI","Data Story Telling"])
 w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024",["Databricks","Spark"])
+w_hocvan("Chứng chỉ","Doodle Design","Design Thinking","","2024",[])
 st.header('KINH NGHIỆM LÀM VIỆC',divider ='gray')
 w_lamviec("Techcombank","Chuyên gia Giám sát chất lượng Dịch vụ vận hành"
           ,["+ Giám sát chất lượng dịch vụ thông qua lắng nghe trực tiếp phản hồi từ khách hàng & các phân tích sâu về hành trình khách hàng"
@@ -75,6 +76,26 @@ w_lamviec("Techcombank","Chuyên gia Giám sát chất lượng Dịch vụ vậ
              ,"+ ~ 130 rules giám sát rủi ro hoạt động KHDN: mở tài khoản, phát vay, bảo lãnh, tài sản, hạn mức, chuyển tiền quốc tế, tài trợ thương mại"]
           ,["PowerBI Report Server","PowerBI Services","Python","PowerApps","Databricks (SQL warehouse, Allert, Notebooks, Dashboard)"]
           ,"","04/2024-nay")
+w_lamviec("Techcombank","Chuyên viên cao cấp Quản trị hiệu quả vận hành"
+          ,["+ Kiểm soát các chỉ số vận hành (SLA/FTR/TAT/FCR) & các phân tích chuyên sâu đảm bảo chất lượng vận hành của đơn vị nghiệp vụ"
+            ,"+ Tối ưu hiệu quả vận hành thông qua các giải pháp tự động hóa bằng dữ liệu (đối chiếu giao dịch/công cụ truy vấn theo quy định sản phẩm/công cụ tạo thông báo tự động...)"
+            ,"+ Kiểm soát rủi ro hoạt động qua bộ rule giám sát giao dịch"]
+          ,["+ Bộ báo cáo các chỉ số vận hành KHDN: SLA/FTR/TAT/FCR"
+             ,"+ Bộ báo cáo quản lý năng lực nhân viên: Báo cáo hiệu suất, tỷ lệ đạt SLA, đạt thời gian xử lý tiêu chuẩn (SUT), tỷ lệ lỗi"
+             ,"+ Công cụ tự động: Tổng hợp & gửi email nghĩa vụ cho KHDN, Đối chiếu số dư tài khoản trung gian, Tạo công văn và phương án xử lý nợ tự động cho hoạt động thu hồi nợ"
+             ,"+ Apps: Quản lý dịch vụ tòa nhà tại HO (quản lý thẻ ra vào, đối tác, học viên, thẻ đi lại...); Check-in QR Code; Booking công tác; Theo dõi đòi tiền BCT cho nghiệp vụ TTTM"
+             ,"+ ~ 50 rules giám sát rủi ro hoạt động vận hành KHDN thuộc Tài trợ thương mại."]
+          ,["OracleDWH", "OBIEE", "PowerBI services", "Python", "PowerApps", "PowerAutomate","Agile"]
+          ,"","05/2022-03/2024")
+w_lamviec("Techcombank","Chuyên viên Thanh toán & Tài trợ thương mại"
+          ,["+ Thực hiện nghiệp vụ tài trợ thương mại (phát hành LC, thông báo LC, kiểm tra chứng từ, giải ngân chiết khấu, phát hành bảo lãnh…)"
+            ,"+ Đào tạo nhân viên mới (xây dựng tài liệu & trực tiếp hướng dẫn)"
+            ,"+ Tham gia dự án xây dựng hệ thống BPM với vai trò đóng góp ý tưởng cho hệ thống & tester"
+            ,"+ Review quy trình nghiệp vụ"]
+          ,["+ Xây dựng công cụ đối chiếu phát hiện sai lệch, công cụ nhập liệu & truy vấn (VBA) giúp giảm sai sót & giảm thời gian xử lý giao dịch"]
+          ,["Excel", "VBA", "OCR", "BRD", "CustomerCentric"]
+          ,"","05/2022-03/2024")
+
 
 
 #Version1---------------------------------------------------------------------------------
