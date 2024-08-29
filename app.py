@@ -9,7 +9,7 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 c
     st.markdown(v_hinhthuc)
   with col2:
     st.markdown(f'**{v_nganh}**') 
-    st.markdown(f'***{v_truong}***)
+    st.markdown(f'***{v_truong}***')
   with col3:
     st.markdown(v_kynang)
   with col4:
