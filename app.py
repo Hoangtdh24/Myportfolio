@@ -3,16 +3,16 @@ from PIL import Image
 #Version2---------------------------------------------------------------------------------
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon=":material/badge:", layout="wide")
 
-def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian):  # 2 columns with offset to the right (1:2)
-  col0, col1, col2, col3 = st.columns([2,4,3,1])
-  with col0:
-    st.markdown(v_hinhthuc)
+def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 columns with offset to the right (1:2)
+  col1, col2, col3, col4,col5 = st.columns([1,4,3,1,1])
   with col1:
+    st.markdown(v_hinhthuc)
+  with col2:
     st.markdown(f'**{v_nganh}**')  # highlight text
     st.markdown(v_truong)
-  with col2:
-    st.markdown(f':blue-background[{v_ketqua}]')
   with col3:
+    st.markdown(f':blue-background[{v_ketqua}]')
+  with col4:
     st.markdown(v_tgian)
 
 with open("style.css") as f:
