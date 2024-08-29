@@ -3,8 +3,10 @@ from PIL import Image
 #Version2---------------------------------------------------------------------------------
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon=":material/badge:", layout="wide")
 
-def w_hocvan(v_truong, v_nganh, v_ketqua, v_tgian):  # 2 columns with offset to the right (1:2)
-  col1, col2, col3,_ = st.columns([4,3,2,1])
+def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian):  # 2 columns with offset to the right (1:2)
+  col0, col1, col2, col3 = st.columns([2,4,3,1])
+  with col0:
+    st.markdown(v_hinhthuc)
   with col1:
     st.markdown(f'`{v_nganh}`')  # highlight text
     st.markdown(v_truong)
@@ -29,10 +31,11 @@ with inf_linkedin:
 with inf_address:
     st.info('Hà Đông, Hà Nội',icon = ":material/location_on:")
 
-st.write('## Mục tiêu nghề nghiệp')
+st.write('## MỤC TIÊU NGHỀ NGHIỆP')
 st.text('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.divider()
-st.write('## Học vấn')
+st.write('## HỌC VẤN')
+w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020")
 
 
 
