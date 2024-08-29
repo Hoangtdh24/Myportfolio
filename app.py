@@ -7,7 +7,7 @@ with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 _,header_name,_ = st.columns([1,2,1],vertical_alignment = "center")
-header_name.write('#Trần Duy Hoàng')
+header_name.write('# Trần Duy Hoàng')
 header_name.write('SENIOR DATA ANALYTICS - EXPERT BUSINESS INTELLIGENCE')
 _,inf_phone,inf_mail,inf_linkedin,inf_address,_ = st.columns([1,2,2,2,2,1],vertical_alignment ='center')
 with inf_phone:
