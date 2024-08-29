@@ -12,7 +12,7 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 c
     st.markdown(f'*{v_truong}*')
   with col3:
     for item in v_kynang:
-      st.markdown(item)
+      st.markdown(f':orange-background[{item}]')
   with col4:
     st.markdown(f':blue-background[{v_ketqua}]')
   with col5:
