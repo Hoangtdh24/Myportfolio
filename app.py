@@ -24,10 +24,10 @@ def w_lamviec(v_cty,v_vitri,v_nhiemvu,v_ketqua,v_kynang,v_thanhtich,v_tgian):
     st.markdown(f'**{v_vitri}**') 
     st.markdown(f'*{v_cty}*')
   with col2:
-    st.markdown('**Nội dung công việc**')
+    st.markdown('***Nội dung công việc***')
     for item in v_nhiemvu:
       st.markdown(item)
-    st.markdown('**Sản phẩm & ý nghĩa**')
+    st.markdown('***Sản phẩm & ý nghĩa***')
     for item in v_ketqua:
       st.markdown(item)
   with col3:
