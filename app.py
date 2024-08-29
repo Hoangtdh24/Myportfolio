@@ -8,10 +8,10 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian):  # 2 columns wit
   with col0:
     st.markdown(v_hinhthuc)
   with col1:
-    st.markdown(f'<b>{v_nganh}</b>')  # highlight text
+    st.markdown(f'**{v_nganh}**')  # highlight text
     st.markdown(v_truong)
   with col2:
-    st.markdown(v_ketqua)
+    st.markdown(f':blue-background[{v_ketqua}]')
   with col3:
     st.markdown(v_tgian)
 
