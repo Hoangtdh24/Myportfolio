@@ -33,9 +33,13 @@ with inf_address:
 
 st.header('MỤC TIÊU NGHỀ NGHIỆP',divider ='gray')
 st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
-st.header('HỌC VẤN',divider ='gray')
+st.header('HỌC VẤN & CHỨNG CHỈ',divider ='gray')
 w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020")
 w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016")
+w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021")
+w_hocvan("Chứng chỉ","SLQ Skill (Advanced)","SLQ Skill (Advanced)","","2022")
+w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022")
+w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024")
 
 
 
