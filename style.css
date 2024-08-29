@@ -20,7 +20,7 @@ h5 {
 }
 
 #MainMenu {
-    visibility: hidden;
+    visibility: visible;
 }
 footer {
     visibility: hidden;
