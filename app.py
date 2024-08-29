@@ -19,7 +19,7 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 c
     st.markdown(v_tgian)
 
 def w_lamviec(v_cty,v_vitri,v_nhiemvu,v_ketqua,v_kynang,v_thanhtich,v_tgian):
-  col1, col2, col3, col4,col5 = st.columns([1.5,3.5,3,1,1])
+  col1, col2, col3, col4,col5 = st.columns([1.5,5,1.5,1,1])
   with col1:
     st.markdown(f'**{v_vitri}**') 
     st.markdown(f'*{v_cty}*')
