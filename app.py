@@ -7,9 +7,19 @@ with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 _,header_name,_ = st.columns([1,2,1],vertical_alignment = "center")
-header_name.write('Trần Duy Hoàng')
+header_name.write('#Trần Duy Hoàng')
 header_name.write('SENIOR DATA ANALYTICS - EXPERT BUSINESS INTELLIGENCE')
+_,inf_phone,inf_mail,inf_linkedin,inf_address,_ = st.columns([1,2,2,2,2,1],vertical_alignment ='center')
+with inf_phone:
+    st.info('097 879 8348',icon = ":material/phone_in_talk:")
+with inf_mail:
+    st.info('hoangtdh24@gmail.com',icon = ":material/mail:")
+with inf_linkedin:
+    st.info('hoangtdh24',icon = ":material/link:")
+with inf_address:
+    st.info('Hà Đông, Hà Nội',icon = ":material/location_on:")
 st.divider()
+
 
 
 #Version1---------------------------------------------------------------------------------
