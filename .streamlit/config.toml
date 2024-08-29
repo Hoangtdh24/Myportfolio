@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambria:wght@100&display=swap'); 
+
 [theme]
 primaryColor="#F63366"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#262730"
+font-family='Cambria'
 font="sans serif"
