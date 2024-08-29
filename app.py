@@ -18,6 +18,24 @@ def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 c
   with col5:
     st.markdown(v_tgian)
 
+def w_lamviec(v_cty,v_vitri,v_nhiemvu,v_ketqua,v_kynang,v_thanhtich,v_tgian):
+  col1, col2, col3, col4,col5 = st.columns([1.5,3.5,3,1,1])
+  with col1:
+    st.markdown(f'**{v_vitri}**') 
+    st.markdown(f'*{v_cty}*')
+  with col2:
+    st.markdown('**Nội dung công việc**')
+    st.markdown(v_nhiemvu)
+    st.markdown('**Sản phẩm & ý nghĩa**')
+    st.markdown(v_ketqua)
+  with col3:
+    for item in v_kynang:
+      st.markdown(f':red-background[{item}]')
+  with col4:
+    st.markdown(f':blue-background[{v_thanhtich}]')
+  with col5:
+    st.markdown(v_tgian)
+    
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
@@ -39,11 +57,23 @@ st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa họ
 st.header('HỌC VẤN & CHỨNG CHỈ',divider ='gray')
 w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020",["Hoạt động kinh doanh","Nghiệp vụ ngoại thương"])
 w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016","")
-w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021",["Quantity analytics","Python"])
-w_hocvan("Chứng chỉ","HackerRank","SLQ Skill (Advanced)","","2022",["SQL"])
+w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021",["Quantity analytics","R","Python"])
+w_hocvan("Chứng chỉ","HackerRank","SLQ Skill (Advanced)","","2022",["PLSQL","SQLLite","MySQL"])
 w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022",["PowerBI","Data Story Telling"])
-w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024",["Databricks"])
-
+w_hocvan("Chứng chỉ","Databricks","Databricks Lakehouse Fundamentals","","2024",["Databricks","Spark"])
+st.header('KINH NGHIỆM LÀM VIỆC',divider ='gray')
+w_lamviec("Techcombank","Chuyên gia Giám sát chất lượng Dịch vụ vận hành"
+          ,"""  + Giám sát chất lượng dịch vụ thông qua lắng nghe trực tiếp phản hồi từ khách hàng & các phân tích sâu về hành trình khách hàng;
+                + Tư vấn giải pháp tự động hóa, nâng cao năng lực xử lý dữ liệu tới các bộ phận khác;
+                + Triển khai chuyển đổi các sản phẩm từ DWH sang Datalake/Lakehouse với Databricks."""
+          ,""" + Xây dựng ma trận giao dịch có vấn đề, nhận diện và đưa khách hàng vào mẫu khảo sát nhằm lắng nghe ý kiến khách hàng có trải nghiệm không tốt để khắc phục và cải tiến.
+   + Dashboard hành vi KHDN và chất lượng dịch vụ của ngân hàng từ góc độ khách hàng, xây dựng bộ ngưỡng cảnh báo phối hợp giữa các chỉ số chất lượng dịch vụ & các chỉ số tài chính.
+   + Tổ chức khóa học PowerApps & tư vấn logic cho các đơn vị xây dựng App quản lý hoạt động văn hóa, App quản lý nhân tài, App đào tạo; Xây dựng báo cáo hoạt động văn hóa toàn hàng & báo cáo tuân thủ thời gian làm việc tại HO (~12k user sử dụng).
+   + Hỗ trợ tự động hóa hoạt động của đơn vị Tetesales sản phẩm vay KHCN thông qua báo cáo tự động: báo cáo lịch sử tương tác & trạng thái giao dịch của khách hàng, ma trận khuyến nghị về chiến dịch cần thực hiện giúp thay thế việc tra cứu thủ công và tối ưu hiệu quả bán.
+   + ~ 130 rules giám sát rủi ro hoạt động KHDN: mở tài khoản, phát vay, bảo lãnh, tài sản, hạn mức, chuyển tiền quốc tế, tài trợ thương mại
+          """
+          ,["PowerBI Report Server","PowerBI Services","Python","PowerApps","Databricks (SQL warehouse, Allert, Notebooks, Dashboard)"]
+          ,"","04/2024-nay")
 
 
 #Version1---------------------------------------------------------------------------------
