@@ -8,8 +8,8 @@ with open("style.css") as f:
 
 _,header_name,_ = st.columns([1,2,1],vertical_alignment = "center")
 header_name.write('# Trần Duy Hoàng')
-header_name.write('### SENIOR DATA ANALYTICS - EXPERT BUSINESS INTELLIGENCE')
-_,inf_phone,inf_mail,inf_linkedin,inf_address,_ = st.columns([1,2,2,2,2,1],vertical_alignment ='center')
+header_name.write('#### SENIOR DATA ANALYTICS - EXPERT BUSINESS INTELLIGENCE')
+_,inf_phone,inf_mail,inf_linkedin,inf_address,_ = st.columns([4,3,3,3,3,4],vertical_alignment ='center')
 with inf_phone:
     st.info('097 879 8348',icon = ":material/phone_in_talk:")
 with inf_mail:
