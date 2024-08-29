@@ -32,8 +32,7 @@ with inf_address:
     st.info('Hà Đông, Hà Nội',icon = ":material/location_on:")
 
 st.header('## MỤC TIÊU NGHỀ NGHIỆP',divider ='gray')
-st.text('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
-st.divider()
+st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.header('## HỌC VẤN',divider ='gray')
 w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020")
 
