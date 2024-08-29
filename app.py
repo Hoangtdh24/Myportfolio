@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon=":material/badge:", layout="wide")
 
 def w_hocvan(v_hinhthuc, v_truong, v_nganh, v_ketqua, v_tgian, v_kynang):  # 2 columns with offset to the right (1:2)
-  col1, col2, col3, col4,col5 = st.columns([1,4,3,1,1])
+  col1, col2, col3, col4,col5 = st.columns([1.5,3.5,3,1,1])
   with col1:
     st.markdown(v_hinhthuc)
   with col2:
@@ -37,7 +37,7 @@ st.header('MỤC TIÊU NGHỀ NGHIỆP',divider ='gray')
 st.markdown('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.header('HỌC VẤN & CHỨNG CHỈ',divider ='gray')
 w_hocvan("Đại học chính quy","Đại học Ngoại thương","Kinh tế đối ngoại","Xuất sắc","2016-2020","Nghiệp vụ")
-w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016")
+w_hocvan("THPT","THPT Chuyên Thái Bình","Chuyên Toán","Giải nhì VMO 2016","2013-2016","")
 w_hocvan("Chứng chỉ","Trường Công nghệ thông tin Truyền thông - Đại học Bách khoa Hà Nội","Phân tích định lượng","","2021","Phân tích định lượng")
 w_hocvan("Chứng chỉ","SLQ Skill (Advanced)","SLQ Skill (Advanced)","","2022","SQL")
 w_hocvan("Chứng chỉ","Great Learning","Visualizing Data with Microsoft Power BI","","2022","PowerBI")
