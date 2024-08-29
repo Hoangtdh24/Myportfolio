@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 #Version2---------------------------------------------------------------------------------
-st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon="☀", layout="wide")
+st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon=":material/badge:", layout="wide")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
@@ -15,7 +15,7 @@ with inf_phone:
 with inf_mail:
     st.info('hoangtdh24@gmail.com',icon = ":material/mail:")
 with inf_linkedin:
-    st.info('hoangtdh24',icon = ":material/link:")
+    st.info('linkedin.com/hoangtdh24',icon = ":material/link:")
 with inf_address:
     st.info('Hà Đông, Hà Nội',icon = ":material/location_on:")
 st.divider()
