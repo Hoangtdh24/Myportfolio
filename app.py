@@ -3,6 +3,16 @@ from PIL import Image
 #Version2---------------------------------------------------------------------------------
 st.set_page_config(page_title='Trần Duy Hoàng - Portfolio',page_icon=":material/badge:", layout="wide")
 
+def w_hocvan(v_truong, v_nganh, v_ketqua, v_tgian):  # 2 columns with offset to the right (1:2)
+  col1, col2, col3,_ = st.columns([4,3,2,1])
+  with col1:
+    st.markdown(f'`{v_nganh}`')  # highlight text
+    st.markdown(v_truong)
+  with col2:
+    st.markdown(v_ketqua)
+  with col3:
+    st.markdown(v_tgian)
+
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
@@ -18,7 +28,11 @@ with inf_linkedin:
     st.info('linkedin.com/hoangtdh24',icon = ":material/link:")
 with inf_address:
     st.info('Hà Đông, Hà Nội',icon = ":material/location_on:")
+
+st.write('## Mục tiêu nghề nghiệp')
+st.text('Trở thành chuyên gia về phân tích dữ liệu và khoa học dữ liệu')
 st.divider()
+st.write('## Học vấn')
 
 
 
