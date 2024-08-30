@@ -74,7 +74,7 @@ w_lamviec("Techcombank","Chuyên gia Giám sát chất lượng Dịch vụ vậ
              ,"+ Tổ chức khóa học PowerApps & tư vấn logic cho các đơn vị xây dựng App quản lý hoạt động văn hóa, App quản lý nhân tài, App đào tạo; Xây dựng báo cáo hoạt động văn hóa toàn hàng & báo cáo tuân thủ thời gian làm việc tại HO (~12k user sử dụng)"
              ,"+ Hỗ trợ tự động hóa hoạt động của đơn vị Tetesales sản phẩm vay KHCN thông qua báo cáo tự động: báo cáo lịch sử tương tác & trạng thái giao dịch của khách hàng, ma trận khuyến nghị về chiến dịch cần thực hiện giúp thay thế việc tra cứu thủ công và tối ưu hiệu quả bán."
              ,"+ ~ 130 rules giám sát rủi ro hoạt động KHDN: mở tài khoản, phát vay, bảo lãnh, tài sản, hạn mức, chuyển tiền quốc tế, tài trợ thương mại"]
-          ,["PowerBI Report Server","PowerBI Services","Python","PowerApps","Databricks (SQL warehouse, Allert, Notebooks, Dashboard)"]
+          ,["SQL","PowerBI Report Server","PowerBI Services","Python","PowerApps","Databricks (SQL warehouse, Allert, Notebooks, Dashboard)"]
           ,"","04/2024-nay")
 w_lamviec("Techcombank","Chuyên viên cao cấp Quản trị hiệu quả vận hành"
           ,["+ Kiểm soát các chỉ số vận hành (SLA/FTR/TAT/FCR) & các phân tích chuyên sâu đảm bảo chất lượng vận hành của đơn vị nghiệp vụ"
@@ -85,7 +85,7 @@ w_lamviec("Techcombank","Chuyên viên cao cấp Quản trị hiệu quả vận
              ,"+ Công cụ tự động: Tổng hợp & gửi email nghĩa vụ cho KHDN, Đối chiếu số dư tài khoản trung gian, Tạo công văn và phương án xử lý nợ tự động cho hoạt động thu hồi nợ"
              ,"+ Apps: Quản lý dịch vụ tòa nhà tại HO (quản lý thẻ ra vào, đối tác, học viên, thẻ đi lại...); Check-in QR Code; Booking công tác; Theo dõi đòi tiền BCT cho nghiệp vụ TTTM"
              ,"+ ~ 50 rules giám sát rủi ro hoạt động vận hành KHDN thuộc Tài trợ thương mại."]
-          ,["OracleDWH", "OBIEE", "PowerBI services", "Python", "PowerApps", "PowerAutomate","Agile"]
+          ,["PLSQL","OracleDWH", "OBIEE", "PowerBI services", "Python", "PowerApps", "PowerAutomate","Agile"]
           ,"","05/2022-03/2024")
 w_lamviec("Techcombank","Chuyên viên Thanh toán & Tài trợ thương mại"
           ,["+ Thực hiện nghiệp vụ tài trợ thương mại (phát hành LC, thông báo LC, kiểm tra chứng từ, giải ngân chiết khấu, phát hành bảo lãnh…)"
